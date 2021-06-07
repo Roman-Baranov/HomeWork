@@ -22,8 +22,50 @@
 
 using namespace std;
 
+
+extern const int a;
+extern const int b;
+extern const int c;
+extern const int d;
+
+
 int main()
 {
-    cout << "Hello World!" << endl;
+    // 1/4 Задание
+
+    float x = a * (b + (static_cast <float> (c) / d));
+    cout << x << endl; // 1
+
+
+    // 2 Задание
+
+    int num1, num2 = 21, num3;
+    cout << "Введите число: " << endl;
+    cin >> num1;
+
+    num3 = (num1 <= num2 || num1 > num2) ? num1 - num2 : num1 - num2;
+
+    if (num1 > num2)
+    {
+        cout << num3 * 2 << endl;
+    }
+
+    if (num1 <= num2)
+    {
+        cout << num3 << endl;
+    }
+
+
+
+
+    // 3 задание
+
+    int array[3][3][3], *Xarray;
+
+    Xarray = &array[1][1][1];
+
+    cout << *Xarray << endl;
+
+
     return 0;
 }
